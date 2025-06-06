@@ -22,7 +22,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--primary);
+    background-color: var(--primary);
+    background: fixed;
     padding: 1rem 2rem;
     border-color: #ffffff;
     height: 50px;
