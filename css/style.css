@@ -57,7 +57,7 @@
   .hero-card {
     background-image: url("../assets/pic\ 21.jpeg");
     background-size: cover;
-    background-position: center;
+    background-position: ce;
     padding: 3rem;
     border-radius: 10px;
     color: white;
@@ -472,46 +472,38 @@
   .contact-form button:hover {
     background: #009ca4;
   }
- /* Hide nav and show hamburger on small screens */
+  .menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  background: white;
+  height: 3px;
+  width: 25px;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
 @media (max-width: 768px) {
-  .nav-links {
+  .navbar nav {
     display: none;
     flex-direction: column;
-    background-color: #111;
+    background: #000;
     position: absolute;
     top: 60px;
-    right: 0;
-    width: 100%;
-    text-align: center;
-    padding: 1rem 0;
+    right: 20px;
+    padding: 1rem;
+    border-radius: 8px;
     z-index: 1000;
   }
 
-  .nav-links.active {
+  .navbar nav.active {
     display: flex;
   }
 
-  .hamburger {
+  .menu-toggle {
     display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    border: none;
-    background: none;
-    gap: 5px;
-  }
-
-  .hamburger span {
-    height: 3px;
-    width: 25px;
-    background-color: white;
-    border-radius: 2px;
-    transition: 0.3s;
-  }
-}
-
-/* On large screens, hide hamburger */
-@media (min-width: 769px) {
-  .hamburger {
-    display: none;
   }
 }
