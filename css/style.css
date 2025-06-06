@@ -481,12 +481,6 @@
   position: relative;
 }
 
-.nav-links a {
-  color: white;
-  margin-left: 1rem;
-  text-decoration: none;
-  font-weight: bold;
-}
 
 .hamburger {
   display: none;
@@ -507,21 +501,6 @@
 }
 
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 2rem;
-    background-color: black;
-    padding: 1rem;
-    border-radius: 8px;
-    width: 200px;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
 
   .hamburger {
     display: flex;
