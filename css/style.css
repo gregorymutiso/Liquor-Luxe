@@ -472,53 +472,51 @@
   .contact-form button:hover {
     background: #009ca4;
   }
-  .menu-toggle {
+  .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: black;
+  position: relative;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hamburger {
   display: none;
   flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  background: none;
+  border: none;
   cursor: pointer;
 }
 
-.menu-toggle span {
-  background: white;
+.hamburger span {
   height: 3px;
-  width: 25px;
-  margin: 4px 0;
-  transition: all 0.3s ease;
+  width: 100%;
+  background-color: white;
+  border-radius: 2px;
 }
 
-@media (max-width: 768px) {
-  .navbar nav {
-    display: none;
-    flex-direction: column;
-    background: #000;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    padding: 1rem;
-    border-radius: 8px;
-    z-index: 1000;
-  }
-
-  .navbar nav.active {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: flex;
-  }
-  /* Hide nav and show hamburger on small screens */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
     flex-direction: column;
-    background-color: #111;
     position: absolute;
     top: 60px;
-    right: 0;
-    width: 100%;
-    text-align: center;
-    padding: 1rem 0;
-    z-index: 1000;
+    right: 2rem;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 200px;
   }
 
   .nav-links.active {
@@ -527,27 +525,5 @@
 
   .hamburger {
     display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    border: none;
-    background: none;
-    gap: 5px;
   }
-
-  .hamburger span {
-    height: 3px;
-    width: 25px;
-    background-color: white;
-    border-radius: 2px;
-    transition: 0.3s;
-  }
-}
-
-/* On large screens, hide hamburger */
-@media (min-width: 769px) {
-  .hamburger {
-    display: none;
-  }
-}
-
 }
