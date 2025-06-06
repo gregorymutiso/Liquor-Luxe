@@ -17,10 +17,11 @@
   
   .navbar {
     position: fixed;
+    background-color: #000000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: none;
+    background: fixed;
     padding: 1rem 2rem;
     border-color: #ffffff;
     height: 50px;
