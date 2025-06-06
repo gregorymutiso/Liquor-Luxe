@@ -507,4 +507,28 @@
   .menu-toggle {
     display: flex;
   }
+  .hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 2px;
+}
+@media (max-width: 600px) {
+  .hamburger {
+    display: flex;
+  }
+}
+
 }
