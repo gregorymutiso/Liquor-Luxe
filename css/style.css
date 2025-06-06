@@ -22,8 +22,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--primary);
-    background: fixed;
+    background-color: #000000;
+    background: scroll;
     padding: 1rem 2rem;
     border-color: #ffffff;
     height: 50px;
@@ -56,7 +56,7 @@
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    padding-top: 70px
+
   }
   
   .hero-card {
